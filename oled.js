@@ -54,6 +54,11 @@ var Oled = function(i2c, opts) {
   this.dirtyBytes = [];
 
   var config = {
+    '128x128': {
+      'multiplex': 0x1F,
+      'compins': 0x02,
+      'coloffset': 0
+    },
     '128x32': {
       'multiplex': 0x1F,
       'compins': 0x02,
